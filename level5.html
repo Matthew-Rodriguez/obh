@@ -1,0 +1,97 @@
+<!doctype html>
+<html id="bodyht3">
+<head>
+	<meta charset="utf-8">
+	<title>Blobs</title>
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://kit.fontawesome.com/bdc6087c8f.js" crossorigin="anonymous"></script>
+	<script defer src="node_modules/swup/dist/swup.min.js"></script>
+	<script defer src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/css-doodle@0.7.7/css-doodle.min.js"></script>
+
+</head>
+
+<body id="body" ">
+  <main id="main" ">
+    <css-doodle > 
+        :doodle {
+            @grid: 1x4 / 90vmax;
+        position: absolute;
+        overflow:hidden;
+        z-index: 0;
+        width:200vh;
+        }
+    
+        @size: 100% 150%;
+        position: absolute;
+      
+        background: @m(50, (
+            linear-gradient(transparent, @p(
+                #8B0000@repeat(2, @p([0-9a-f])), 
+                #8B0000@repeat(2, @p([0-9a-f])) 
+        ))
+            @r(0%, 100%) @r(0%, 100%) /
+            @r(3px) @r(23vmin)
+            no-repeat
+        ));
+    
+        will-change: transform;
+        animation: f 20s linear calc(-20s / @size() * @i()) infinite;
+        @keyframes f {
+            from { transform: translateY(-100%) }
+            to { transform: translateY(100%) }
+        }
+    </css-doodle>
+
+    <div class="newcontainer" id="swup" class="transition-fade">
+	
+		<section class="timerbody3">
+            <p id="timer" class="timer">0</p>
+        </section>
+        <section id="buttons" class="buttons timerbody3 ">
+            <button class="backg3" id="startStopBtn">Start/Stop</button>
+         <a href="index.html" >  <button class="backg3" id="resetBtn">Restart</button> </a>
+            <button class="backg3" id="recordBtn">Record Time</button>
+        </section>
+        <section class="timerbody3 pastimes">
+            <h3>Past Times</h3>
+            <ul id="time-records" class="time-records">
+
+            </ul>
+		</section>
+
+		
+
+<div id="nextLevel" class="passed">Passed!  &#8594;>
+<a href="iframe.html">	 <button class="#" id="nextBtn">Level 3</button></a>
+
+</div>
+<div id="youWin" class="color-change-5x">Gold! <i class="far fa-gem gold "></i></div>
+<div id="youWin_silver" class="color-change-5x">Silver!  <i class="far fa-gem silver"></i></div>
+<div id="youWin_bronze" class="color-change-5x">Bronze!</div>
+
+		<div class="blobs_122" id="blob122" ></div>
+        <div class="blobs_222" id="blob222" ></div>
+        <div class="blobs_333" id="blob333" ></div>
+        <div class="blobs_444" id="blob444" ></div>
+        <div class="blobs_555" id="blob555" ></div>
+        <div class="blobs_666" id="blob666" ></div>
+		<div class="blobs_777" id="blob777" ></div>
+	
+
+        </a>
+    </div>
+
+
+	<div id="cursor"></div>
+
+</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+</html>
